@@ -1,0 +1,16 @@
+name: pdftk-bea
+base: core18
+version: '0.1'
+summary: Graphical User Interface for pdftk
+description: |
+  Bea is not an Ubuntu power user. She needs an utility to manipulate
+  PDF files but she is not familiar with the terminal. This snap
+  provides a graphical user interface for pdftk utility.
+
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: devmode # use 'strict' once you have the right plugs and slots
+
+parts:
+  my-part:
+    # See 'snapcraft plugins'
+    plugin: nil
