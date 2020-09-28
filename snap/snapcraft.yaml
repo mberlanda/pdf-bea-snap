@@ -12,11 +12,14 @@ confinement: devmode # use 'strict' once you have the right plugs and slots
 parts:
   pdf-bea:
     plugin: go
-    go-importpath: github.com/gchaincl/httplab
-    source: https://github.com/gchaincl/httplab
+    go-importpath: github.com/mberlanda/pdf-bea
+    source: https://github.com/mberlanda/pdf-bea
     source-type: git
     build-packages:
     - gcc
+    - libgl1-mesa-dev
+    - xorg-dev
+
 apps:
   pdf-bea:
-    command: bin/httplab
+    command: bin/pdf-bea
